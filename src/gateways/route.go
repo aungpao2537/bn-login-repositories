@@ -23,6 +23,6 @@ import (
 
 func GetewayLogin(gateway HTTPGateway, c *echo.Echo) {
 	s := c.Group("/api/dashboard")
-	s.GET("/gettest", gateway.GAllSpeakers)
+	// s.GET("/gettest", gateway.GAllSpeakers)
 
 }
