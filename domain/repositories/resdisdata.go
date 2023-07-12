@@ -1,8 +1,9 @@
 package repositories
 
 import (
-	. "bn-login-repositories/domain/datasources"
 	"context"
+
+	. "github.com/aungpao2537/bn-login-repositories/domain/datasources"
 
 	"github.com/go-redis/redis/v8"
 )

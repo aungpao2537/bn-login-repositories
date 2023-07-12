@@ -1,6 +1,7 @@
 package gateways
 
 import (
+	"github.com/aungpao2537/bn-login-repositories/src/gateways"
 	"github.com/labstack/echo/v4"
 )
 
@@ -21,8 +22,13 @@ import (
 
 // }
 
-func GetewayLogin(gateway HTTPGateway, c *echo.Echo) {
+// func GetewayLogin(gateway HTTPGateway, c *echo.Echo) {
+// 	// s.GET("/gettest", gateway.GAllSpeakers)
+
+// }
+
+func GetewayFirebase(garewat HTTPGateway, c *echo.Echo) {
 	s := c.Group("/api/dashboard")
-	// s.GET("/gettest", gateway.GAllSpeakers)
+	s.GET("/firebase_auth", gateways.Firebase_login)
 
 }

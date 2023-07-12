@@ -6,10 +6,10 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-type firebaseRepository struct {
+type FirebaseRepository struct {
 	Context    context.Context
 	Collection *mongo.Collection
 }
 
-type IfirebaseRepository interface {
+type IFirebaseRepository interface {
 }
